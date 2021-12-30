@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="register background">
+    <div class="col-2">
+        <form action="register-lead.php" method="POST" class="modal-content">
+            <div class="container">
+                <h1>Register Leads</h1>
+                <p>Please fill in this form to register your leads.</p>
+                <hr>
+                <input type="hidden" value="1" name="signup">
+                <label for="name"><b>Name<span class="asterics">*</span></b></label>
+                <input type="text" placeholder="Enter first name" name="name" required>
+
+                <label for="phone"><b>Phone<span class="asterics">*</span></b></label>
+                <input type="text" placeholder="Enter phone number" name="phone" required>
+
+                <label for="email"><b>Email<span class="asterics">*</span></b></label>
+                <input type="text" placeholder="Enter email" name="email" required>
+
+                <label for="companyName"><b>Product</b></label>
+                <input list="product" type="text" name="product" autocomplete="off" required>
+                <datalist id="product">
+                    <option value="Home Loan" />
+                    <option value="LAP"/>
+                    <option value="Personal loan"/>
+                    <option value="Auto loan"/>
+                    <option value="Buisness loan"/>
+                </datalist>
+
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn">Register</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="col-1">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Designation</th>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

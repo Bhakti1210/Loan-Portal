@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" media="all" href="css/style.css">
+</head>
+
+<body class="login__form background">
+    <div class="col-1">
+        <div class="modal-content">
+            <form action="login.php" method="POST">
+                <div class="container">
+                    <h1>Login</h1>
+                    <hr>
+                    <input type="hidden" value="1" name="login">
+                    <label for="phone"><b>Mobile No.<span class="asterics">*</span></b></label>
+                    <input type="text" placeholder="Enter your registered phone number" name="phone" required>
+                    <label for="psw"><b>Passsword<span class="asterics">*</span></b></label>
+                    <input type="text" id="pwd1" placeholder="Enter password" name="psw" required>
+                    <label for="confirm-psw"><b>Confirm Password<span class="asterics">*</span></b></label>
+                    <input type="text" id="pwd2" placeholder="Re-type password" name="confirm-psw" required>
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn">submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

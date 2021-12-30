@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" media="all" href="css/style.css">
+</head>
+
+<body>
+    <div class="modal-content">
+        <form action="action.php" method="POST">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <input type="hidden" value="1" name="signup">
+                <label for="fname"><b>First Name<span class="asterics">*</span></b></label>
+                <input type="text" placeholder="Enter first name" name="fname" required>
+
+                <label for="lname"><b>Last Name<span class="asterics">*</span></b></label>
+                <input type="text" placeholder="Enter last name" name="lname" required>
+
+                <label for="phone"><b>Phone<span class="asterics">*</span></b></label>
+                <input type="text" placeholder="Enter phone number" name="phone" required>
+
+                <label for="email"><b>Email<span class="asterics">*</span></b></label>
+                <input type="text" placeholder="Enter email" name="email" required>
+
+                <label for="companyName"><b>Company Name</b></label>
+                <input type="text" placeholder="Enter company name" name="cname" required>
+
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+
+                <div class="login">
+                    <p class="login_text"><b>Already a user ?</b></p> <span><a href="https://loanportal.cognilements.com/user-login.html">Login Here</a></span>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main {
+    background-image: url('bg3.jpg');
+}
+
+.user__login {
+    background-image: url('bg4.jpg');
+}
+
+@media screen and (max-width: 1024px) {
+    .user__login {
+        margin-bottom: 242px;
+    }
+}
+
+.login__form {
+    background-image: url('bg1.jpg');
+}
+
+.register {
+    background-image: url('bg5.jpg');
+}
+
+a {
+    color: #1877F2;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.col-1 {
+    width: 50%;
+}
+
+.col-2 {
+    float: right;
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .col-1,
+    .col-2 {
+        width: 100%;
+    }
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #7EC0DD;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+/* Extra styles for the cancel button */
+
+
+/* 
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+} */
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+.signupbtn {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* .cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+} */
+
+
+/* Add padding to container elements */
+
+.container {
+    padding: 16px;
+}
+
+
+/*Asterics*/
+
+.asterics {
+    color: #f44336;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+    /* Could be more or less, depending on screen size */
+}
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*login section*/
+
+.login {
+    text-align: center;
+}
+
+.login_text {
+    font-size: small;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+.dropdown {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+/*table*/
+
+.col-table-1 {
+    float: right;
+    width: 50%;
+}
+
+.col-table-2 {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .col-table-1 {
+        width: 100%;
+    }
+}
+
+.table__leads {
+    padding: 8rem;
+}
+
+#leads {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#leads th,
+#leads td {
+    text-align: left;
+    border: 1.5px solid rgb(51, 51, 51);
+    padding: 8px;
+}
+
+#leads th {
+    background-color: #7EC0DD;
+}
