@@ -1,1 +1,1 @@
-# Loan-Portal
+A web app which manages and allows user and executive at backend to add requirements for different loans. The app also features a functionality for signing up and a different functionality for already registered user. The system generates an email trigger when new user signs up and allows him to set password which is then stored in the database at backend. The system also knows which loan has been requested and user will know its staus on loggin in.
